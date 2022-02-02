@@ -13,7 +13,6 @@ def TestP0():
 def on_button_pressed_ab():
     global Ghosts
     Ghosts = GBK
-    Sus.scroll_image(1, 200)
 input.on_button_pressed(Button.AB, on_button_pressed_ab)
 
 def TestP1():
@@ -26,7 +25,6 @@ def TestP1():
                         # . . . .
         """)
         pins.digital_write_pin(DigitalPin.P1, 1)
-Sus: Image = None
 GBK: Image = None
 Ghosts: Image = None
 pac = images.create_big_image("""
